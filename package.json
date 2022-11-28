@@ -3,15 +3,22 @@
   "version": "1.0.0",
   "description": "Website for Instincts Training.",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp build",
+    "serve": "gulp"
   },
   "author": "Reece Bennett",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.10",
     "del": "6.1.1",
     "gulp": "^4.0.2",
     "gulp-hb": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
-    "handlebars": "^4.7.7"
+    "gulp-sourcemaps": "^3.0.0",
+    "handlebars": "^4.7.7",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
   }
 }
