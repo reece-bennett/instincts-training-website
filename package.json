@@ -6,7 +6,7 @@
     "build": "gulp"
   },
   "author": "Reece Bennett",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "del": "6.1.1",
     "gulp": "^4.0.2",
