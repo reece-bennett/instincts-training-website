@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./src/**/*.hbs'],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        'instincts-grey': '#545454'
+      },
+    }
   },
   plugins: []
 }

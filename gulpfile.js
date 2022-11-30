@@ -55,7 +55,7 @@ function bsReload(done) {
 
 function bsWatch() {
   watch('src/assets/**/*', series(assets, bsReload));
-  watch(['src/pages/**/*.hbs', 'src/partials/**/*.hbs'], series(html, bsReload));
+  watch(['src/pages/**/*.hbs', 'src/partials/**/*.hbs'], series(html, css, bsReload));
   watch('src/css/**/*.css', css);
 }
 

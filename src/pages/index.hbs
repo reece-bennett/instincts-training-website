@@ -1,5 +1,166 @@
 {{#> page title='Handlebars test'}}
-  {{> header}}
-  <h2 class="text-lg">Test header</h2>
-  <p>Test content.</p>
+  <header class="bg-stone-100 text-instincts-grey">
+    <nav class="max-w-screen-xl mx-auto px-8 py-4 flex justify-between items-center">
+      <a href="#" class="flex gap-6">
+        <img src="/img/instincts-logo.png" class="w-[66px] h-[66px]">
+        <div class="flex flex-col items-center uppercase">
+          <span class="text-4xl">Instincts</span>
+          <span class="">Training LTD</span>
+        </div>
+      </a>
+      <ul class="flex gap-8 text-lg">
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Courses</a>
+        </li>
+        <li>
+         <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="bg-instincts-grey relative">
+    <div class="max-w-screen-xl mx-auto px-8 py-32 grid grid-cols-12 gap-8">
+      <div class="text-gray-50 col-span-5">
+        <div class="flex flex-col gap-6 mb-16">
+          <h1 class="text-6xl font-semibold">
+            We specialise in personal safety
+          </h1>
+          <div class="text-2xl">
+            Giving you the confidence to do the right thing at the right time
+          </div>
+        </div>
+        <div class="text-lg font-semibold flex gap-5">
+          <button class="bg-gray-50 text-instincts-grey px-8 py-4 uppercase">Courses ↓</button>
+          <button class="border border-gray-50 px-8 py-4 uppercase">Contact</button>
+        </div>
+      </div>
+    </div>
+    <img class="object-cover absolute right-0 top-0 h-full" style="width: calc(50% + 5.5rem);"
+      src="/img/boxing_training.png">
+  </section>
+  <section class="bg-stone-100 text-instincts-grey">
+    <div class="max-w-screen-md mx-auto px-8 py-32 space-y-6 text-center">
+      <h2 class="text-5xl font-semibold">Why Instincts?</h2>
+      <p class="text-lg">
+        Instincts has been created after almost 4 decades of working within various organisations, learning about how
+        the world works. In addition to this Paul Bell (Director) has built up a vast amount of knowledge around
+        personal safety, behavioural psychology, self defence and martial arts. We want to be able to create a life
+        balance by providing essential training for our clients.
+      </p>
+      <p class="text-lg">
+        Our courses are bespoke to our clients needs and we will spend time to get to know our clients and be the answer
+        to their needs. Some of our existing courses are : Empowering the Lone Worker, De-escalation, Personal safety,
+        Real Self defence across a wide range of groups including ladies, mens, childrens, people with physical
+        restrictions and weapons. Course creation is our focus to enable our clients to achieve the maximum from the
+        training.
+      </p>
+      <button class="bg-instincts-grey text-gray-50 px-8 py-4 uppercase text-lg font-semibold">About</button>
+    </div>
+  </section>
+  <section class="bg-instincts-grey text-gray-50">
+    <div class="max-w-screen-xl mx-auto px-8 py-32 grid grid-cols-12 gap-8 items-center">
+      <div class="col-span-5 space-y-6">
+        <h2 class="text-5xl font-semibold">Our courses</h2>
+        <p class="text-lg">
+          Our offer is unique and we will spend time to evaluate your needs and create a course to best suit your needs.
+        </p>
+        <button class="bg-gray-50 text-instincts-grey px-8 py-4 uppercase text-lg font-semibold">View courses</button>
+      </div>
+      <div class="col-span-6 col-start-7 space-y-12">
+        <div>
+          <h3 class="text-4xl mb-4">Professional instructors</h3>
+          <p class="text-lg">
+            You will receive training from our highly qualified instructors who have years of working within various
+            organisations.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-4xl mb-4">Comprehensive courses</h3>
+          <p class="text-lg">
+            Our courses cover not just self defense but policy, risk assessments, details around UK law, weapons defence
+            training, and more.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-4xl mb-4">Tailored to you</h3>
+          <p class="text-lg">
+            Pick from one of our existing courses or get in touch and we can ensure that the training delivered
+            perfectly fits your requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-stone-100 text-instincts-grey">
+    <div class="max-w-screen-md mx-auto px-8 py-32 space-y-6 text-center">
+      <h2 class="text-5xl font-semibold">Want to know more?</h2>
+      <p class="text-lg">
+        If you want more information, need something more bespoke, or are looking to chat then we can help you.
+      </p>
+      <button class="bg-instincts-grey text-gray-50 px-8 py-4 uppercase text-lg font-semibold">Contact</button>
+    </div>
+  </section>
+  <footer class="bg-stone-100 text-instincts-grey border-t border-stone-300">
+    <div class="max-w-screen-xl mx-auto px-8 py-8 flex justify-between items-center">
+      <div class="flex flex-col gap-2">
+        <ul class="flex gap-8 text-lg">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Courses</a>
+          </li>
+          <li>
+          <a href="#">Contact</a>
+          </li>
+        </ul>
+        <span class="text-sm">
+          Copyright © 2022 Reece Bennett. All rights reserved.
+        </span>
+      </div>
+      <ul class="flex gap-8 fill-instincts-grey">
+        <li>
+          <a href="#">
+            <svg class="w-8 h-8">
+              <use xlink:href="/img/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="w-8 h-8">
+              <use xlink:href="/img/icons.svg#messenger"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="w-8 h-8">
+              <use xlink:href="/img/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="w-8 h-8">
+              <use xlink:href="/img/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="w-8 h-8">
+              <use xlink:href="/img/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 {{/page}}
