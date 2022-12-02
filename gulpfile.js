@@ -43,7 +43,10 @@ const server = browserSync.create();
 function bsServe(done) {
   server.init({
     server: {
-      baseDir: 'build/'
+      baseDir: 'build/',
+      serveStaticOptions: {
+        extensions: ["html"]
+    }
     },
     open: false
   });
