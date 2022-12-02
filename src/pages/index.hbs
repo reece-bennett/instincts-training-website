@@ -1,30 +1,9 @@
 {{#> page title='Handlebars test'}}
-  <header class="bg-stone-100 text-instincts-grey">
-    <nav class="max-w-screen-xl mx-auto px-8 py-4 flex justify-between items-center">
-      <a href="#" class="flex gap-6">
-        <img src="/img/instincts-logo.png" class="w-[66px] h-[66px]">
-        <div class="flex flex-col items-center uppercase">
-          <span class="text-4xl">Instincts</span>
-          <span class="">Training LTD</span>
-        </div>
-      </a>
-      <ul class="flex gap-8 text-lg">
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Courses</a>
-        </li>
-        <li>
-         <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  {{> header}}
   <section class="bg-instincts-grey relative">
     <div class="max-w-screen-xl mx-auto px-8 py-32 grid grid-cols-12 gap-8">
-      <div class="text-gray-50 col-span-5">
-        <div class="flex flex-col gap-6 mb-16">
+      <div class="text-gray-50 col-span-5 space-y-16">
+        <div class="flex flex-col gap-6">
           <h1 class="text-6xl font-semibold">
             We specialise in personal safety
           </h1>
@@ -33,13 +12,13 @@
           </div>
         </div>
         <div class="text-lg font-semibold flex gap-5">
-          <button class="bg-gray-50 text-instincts-grey px-8 py-4 uppercase">Courses ↓</button>
-          <button class="border border-gray-50 px-8 py-4 uppercase">Contact</button>
+          {{#> link-button style='light'}}Courses ↓{{/link-button}}
+          {{#> link-button style='light-border'}}Contact{{/link-button}}
         </div>
       </div>
     </div>
     <img class="object-cover absolute right-0 top-0 h-full" style="width: calc(50% + 5.5rem);"
-      src="/img/boxing_training.png">
+      src="/img/boxing-training.png">
   </section>
   <section class="bg-stone-100 text-instincts-grey">
     <div class="max-w-screen-md mx-auto px-8 py-32 space-y-6 text-center">
@@ -57,7 +36,7 @@
         restrictions and weapons. Course creation is our focus to enable our clients to achieve the maximum from the
         training.
       </p>
-      <button class="bg-instincts-grey text-gray-50 px-8 py-4 uppercase text-lg font-semibold">About</button>
+      {{#> link-button style='dark'}}About{{/link-button}}
     </div>
   </section>
   <section class="bg-instincts-grey text-gray-50">
@@ -67,7 +46,7 @@
         <p class="text-lg">
           Our offer is unique and we will spend time to evaluate your needs and create a course to best suit your needs.
         </p>
-        <button class="bg-gray-50 text-instincts-grey px-8 py-4 uppercase text-lg font-semibold">View courses</button>
+        {{#> link-button style='light'}}View courses{{/link-button}}
       </div>
       <div class="col-span-6 col-start-7 space-y-12">
         <div>
@@ -100,67 +79,8 @@
       <p class="text-lg">
         If you want more information, need something more bespoke, or are looking to chat then we can help you.
       </p>
-      <button class="bg-instincts-grey text-gray-50 px-8 py-4 uppercase text-lg font-semibold">Contact</button>
+      {{#> link-button style='dark'}}Contact{{/link-button}}
     </div>
   </section>
-  <footer class="bg-stone-100 text-instincts-grey border-t border-stone-300">
-    <div class="max-w-screen-xl mx-auto px-8 py-8 flex justify-between items-center">
-      <div class="flex flex-col gap-2">
-        <ul class="flex gap-8 text-lg">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Courses</a>
-          </li>
-          <li>
-          <a href="#">Contact</a>
-          </li>
-        </ul>
-        <span class="text-sm">
-          Copyright © 2022 Reece Bennett. All rights reserved.
-        </span>
-      </div>
-      <ul class="flex gap-8 fill-instincts-grey">
-        <li>
-          <a href="#">
-            <svg class="w-8 h-8">
-              <use xlink:href="/img/icons.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg class="w-8 h-8">
-              <use xlink:href="/img/icons.svg#messenger"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg class="w-8 h-8">
-              <use xlink:href="/img/icons.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg class="w-8 h-8">
-              <use xlink:href="/img/icons.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg class="w-8 h-8">
-              <use xlink:href="/img/icons.svg#linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+  {{> footer}}
 {{/page}}

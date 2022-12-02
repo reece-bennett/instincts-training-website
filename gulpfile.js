@@ -15,7 +15,9 @@ function clean() {
 
 function html() {
   return src('src/pages/**/*.hbs')
-    .pipe(hb().partials('src/partials/**/*.hbs'))
+    .pipe(hb()
+      .partials('src/partials/**/*.hbs')
+      .helpers('src/helpers/**/*.js'))
     .pipe(rename({ extname: '.html' }))
     .pipe(dest('build/'));
 }
@@ -55,7 +57,7 @@ function bsReload(done) {
 
 function bsWatch() {
   watch('src/assets/**/*', series(assets, bsReload));
-  watch(['src/pages/**/*.hbs', 'src/partials/**/*.hbs'], series(html, css, bsReload));
+  watch(['src/pages/**/*.hbs', 'src/partials/**/*.hbs', 'src/helpers/**/*.js'], series(html, css, bsReload));
   watch('src/css/**/*.css', css);
 }
 
