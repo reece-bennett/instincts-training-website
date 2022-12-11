@@ -1,22 +1,32 @@
 <header class="bg-stone-100 text-instincts-grey">
-  <nav class="max-w-screen-xl mx-auto px-8 py-4 flex justify-between items-center">
-    <a href="/" class="flex gap-6">
-      <img src="/img/instincts-logo.png" class="w-[66px] h-[66px]">
+  <nav class="max-w-screen-xl mx-auto px-8 py-4 flex justify-between items-center relative">
+    <a href="/" class="flex gap-2">
+      <img src="/img/instincts-logo.png" class="w-12 h-12">
       <div class="flex flex-col items-center uppercase">
-        <span class="text-4xl">Instincts</span>
-        <span class="">Training LTD</span>
+        <span class="text-2xl">Instincts</span>
+        <span class="text-sm -mt-2">Training LTD</span>
       </div>
     </a>
-    <ul class="flex gap-8 text-lg">
-      <li>
-        <a href="/about">About</a>
-      </li>
-      <li>
-        <a href="/courses">Courses</a>
-      </li>
-      <li>
-        <a href="/contact">Contact</a>
-      </li>
-    </ul>
+
+    <div>
+      <input type="checkbox" id="menu_toggle" class="peer hidden" autocomplete="off">
+      <label for="menu_toggle" class="md:hidden">
+        <svg class="w-6 h-6 fill-instincts-grey">
+          <use xlink:href="/img/icons.svg#menu"></use>
+        </svg>
+      </label>
+
+      <ul class="bg-stone-100 z-10 hidden peer-checked:flex flex-col gap-8 items-center text-lg absolute left-0 right-0 top-full py-8 md:flex md:relative md:flex-row md:p-0">
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/courses">Courses</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
