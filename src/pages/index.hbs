@@ -14,8 +14,8 @@
         </div>
         <img class="md:hidden" src="/img/boxing-training.png">
         <div class="flex flex-col md:flex-row gap-4">
-          {{#> link-button style="light"}}Courses ↓{{/link-button}}
-          {{#> link-button style="light-border"}}Contact{{/link-button}}
+          {{#> link-button style="light" href="#courses"}}Courses ↓{{/link-button}}
+          {{#> link-button style="light-border" href="/contact"}}Contact{{/link-button}}
         </div>
       </div>
       <img class="hidden md:block md:w-1/2 md:object-cover xl:absolute xl:right-0 xl:h-full"
@@ -39,18 +39,18 @@
         restrictions and weapons. Course creation is our focus to enable our clients to achieve the maximum from the
         training.
       </p>
-      {{#> link-button style="dark"}}About{{/link-button}}
+      {{#> link-button style="dark" href="/about"}}About{{/link-button}}
     </div>
   </section>
 
-  <section class="bg-instincts-grey text-gray-50">
+  <section class="bg-instincts-grey text-gray-50" id="courses">
     <div class="max-w-screen-xl mx-auto px-4 md:px-8 py-8 md:py-16 lg:py-32 grid md:grid-cols-12 gap-8 items-center">
       <div class="md:col-span-5 space-y-6">
         <h2 class="text-3xl lg:text-5xl font-semibold text-center md:text-left">Our courses</h2>
         <p class="lg:text-lg">
           Our offer is unique and we will spend time to evaluate your needs and create a course to best suit your needs.
         </p>
-        {{#> link-button style="light"}}View courses{{/link-button}}
+        {{#> link-button style="light" href="/courses"}}View courses{{/link-button}}
       </div>
       <div class="md:col-span-6 md:col-start-7 space-y-12">
         <div>
@@ -84,7 +84,7 @@
       <p class="lg:text-lg">
         If you want more information, need something more bespoke, or are looking to chat then we can help you.
       </p>
-      {{#> link-button style="dark"}}Contact{{/link-button}}
+      {{#> link-button style="dark" href="/contact"}}Contact{{/link-button}}
     </div>
   </section>
 
