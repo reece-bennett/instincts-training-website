@@ -1,46 +1,44 @@
-{{#> page title='Contact - Instincts Training'}}
+{{#> page title="Contact - Instincts Training"}}
   {{> header}}
 
-  <section class="bg-instincts-grey relative">
-    <div class="max-w-screen-xl mx-auto px-8 py-32 grid grid-cols-12 gap-8">
-      <div class="text-gray-50 col-span-5 space-y-16">
-        <div class="flex flex-col gap-6">
-          <h1 class="text-6xl font-semibold">
+  <section class="bg-instincts-grey text-gray-50 relative">
+    <div class="max-w-screen-xl mx-auto md:flex">
+      <div class="space-y-8 px-4 md:px-8 py-8 md:py-16 lg:py-32 md:w-1/2">
+        <div class="space-y-6">
+          <h1 class="text-4xl lg:text-6xl font-semibold">
             Contact us
           </h1>
-          <div class="text-2xl">
-            We offer a range of courses covering a variety of topics, all of which can be tailored to better suit your
-            needs
+          <div class="text-lg lg:text-2xl">
+            If you want more information, need something more bespoke, or are looking to chat then we can help you.
           </div>
         </div>
+        <img class="md:hidden" src="/img/boxing-training.png">
       </div>
+      <img class="hidden md:block md:w-1/2 md:object-cover xl:absolute xl:right-0 xl:h-full"
+        src="/img/boxing-training.png">
     </div>
-    <img class="object-cover absolute right-0 top-0 h-full" style="width: calc(50% + 5.5rem);"
-      src="/img/boxing-training.png">
   </section>
 
   <section class="bg-stone-100 text-instincts-grey">
-    <div class="max-w-screen-xl mx-auto px-8 py-32 grid grid-cols-12 gap-8 items-center">
-      <div class="col-span-4 col-start-2 space-y-8">
-        <div class="space-y-4">
-          <div>
-            <div class="flex items-center gap-2">
-              <svg class="w-6 h-6 fill-instincts-grey">
-                <use xlink:href="/img/icons.svg#phone"></use>
-              </svg>
-              <span class="text-2xl font-semibold">Phone</span>
-            </div>
-            <a href="#" class="text-lg">01234 56789</a>
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <svg class="w-6 h-6 fill-instincts-grey">
-                <use xlink:href="/img/icons.svg#email"></use>
-              </svg>
-              <span class="text-2xl font-semibold">Email</span>
-            </div>
-            <a href="#" class="text-lg">enquiries@insinctstraining.com</a>
-          </div>
+    <div class="mx-auto px-4 md:px-8 py-8 md:py-16 lg:py-32 flex flex-col gap-8 md:flex-row items-center md:gap-16 md:justify-center">
+      <div class="flex flex-col items-center md:items-start gap-6">
+        <div class="flex flex-col items-center md:items-start">
+          <h2 class="flex items-center gap-2">
+            <svg class="w-6 h-6 fill-instincts-grey">
+              <use xlink:href="/img/icons.svg#phone"></use>
+            </svg>
+            <span class="text-2xl font-semibold">Phone</span>
+          </h2>
+          <a href="#" class="text-lg">01234 56789</a>
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <h2 class="flex items-center gap-2">
+            <svg class="w-6 h-6 fill-instincts-grey">
+              <use xlink:href="/img/icons.svg#email"></use>
+            </svg>
+            <span class="text-2xl font-semibold">Email</span>
+          </h2>
+          <a href="#" class="text-lg">enquiries@insinctstraining.com</a>
         </div>
         <ul class="flex gap-8 fill-instincts-grey">
           <li>
@@ -80,7 +78,9 @@
           </li>
         </ul>
       </div>
-      <img class="col-span-6 object-cover" src="/img/course.jpg">
+      <div>
+        <img class="object-cover max-h-96" src="/img/course.jpg">
+      </div>
     </div>
   </section>
 
