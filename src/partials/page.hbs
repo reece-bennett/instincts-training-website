@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,12 @@
   <title>{{title}}</title>
   <link href="main.css" rel="stylesheet">
 </head>
-<body>
-  {{> @partial-block}}
+<body class="h-full flex flex-col bg-stone-100">
+  {{> header}}
+  <div class="flex-auto">
+    {{> @partial-block}}
+  </div>
+  {{> footer}}
   <script src="script.min.js"></script>
 </body>
 </html>
