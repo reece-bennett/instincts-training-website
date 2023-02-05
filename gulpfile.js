@@ -42,7 +42,7 @@ function js() {
 }
 
 function assets() {
-  return src('src/assets/**/*')
+  return src(['src/assets/**/*', 'src/favicon/*'])
     .pipe(dest('build/'));
 }
 
