@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,129 +7,26 @@
   <title>Contact - Instincts Training</title>
   <link href="main.css" rel="stylesheet">
 </head>
-<body>
-    <header class="bg-stone-100 text-instincts-grey">
-      <nav class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center relative md:px-8">
-        <a href="/" class="flex gap-2 lg:gap-4">
-          <img src="/img/instincts-logo.png" class="w-12 h-12 lg:w-16 lg:h-16">
-          <div class="flex flex-col items-center uppercase">
-            <span class="text-2xl lg:text-4xl">Instincts</span>
-            <span class="text-sm lg:text-base -mt-2 lg:-mt-1">Training LTD</span>
-          </div>
-        </a>
-    
-        <div>
-          <input type="checkbox" id="menu_toggle" class="peer hidden" autocomplete="off">
-          <label for="menu_toggle" class="md:hidden">
-            <svg class="w-6 h-6 fill-instincts-grey">
-              <use xlink:href="/img/icons.svg#menu"></use>
-            </svg>
-          </label>
-    
-          <ul class="bg-stone-100 z-10 hidden peer-checked:flex flex-col gap-8 items-center text-lg absolute left-0 right-0 top-full pt-4 pb-8 md:flex md:relative md:flex-row md:p-0">
-            <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="/courses">Courses</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-          </ul>
+<body class="h-full flex flex-col bg-stone-100">
+  <header class="bg-stone-100 text-instincts-grey shrink-0">
+    <nav class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center relative md:px-8">
+      <a href="/" class="flex gap-2 lg:gap-4">
+        <img src="/img/instincts-logo.png" class="w-12 h-12 lg:w-16 lg:h-16">
+        <div class="flex flex-col items-center uppercase">
+          <span class="text-2xl lg:text-4xl">Instincts</span>
+          <span class="text-sm lg:text-base -mt-2 lg:-mt-1">Training LTD</span>
         </div>
-      </nav>
-    </header>
+      </a>
   
-    <section class="bg-instincts-grey relative">
-      <div class="max-w-screen-xl mx-auto px-8 py-32 grid grid-cols-12 gap-8">
-        <div class="text-gray-50 col-span-5 space-y-16">
-          <div class="flex flex-col gap-6">
-            <h1 class="text-6xl font-semibold">
-              Contact us
-            </h1>
-            <div class="text-2xl">
-              We offer a range of courses covering a variety of topics, all of which can be tailored to better suit your
-              needs
-            </div>
-          </div>
-        </div>
-      </div>
-      <img class="object-cover absolute right-0 top-0 h-full" style="width: calc(50% + 5.5rem);"
-        src="/img/boxing-training.png">
-    </section>
+      <div>
+        <input type="checkbox" id="menu_toggle" class="peer hidden" autocomplete="off">
+        <label for="menu_toggle" class="md:hidden">
+          <svg class="w-6 h-6 fill-instincts-grey">
+            <use xlink:href="/img/icons.svg#menu"></use>
+          </svg>
+        </label>
   
-    <section class="bg-stone-100 text-instincts-grey">
-      <div class="max-w-screen-xl mx-auto px-8 py-32 grid grid-cols-12 gap-8 items-center">
-        <div class="col-span-4 col-start-2 space-y-8">
-          <div class="space-y-4">
-            <div>
-              <div class="flex items-center gap-2">
-                <svg class="w-6 h-6 fill-instincts-grey">
-                  <use xlink:href="/img/icons.svg#phone"></use>
-                </svg>
-                <span class="text-2xl font-semibold">Phone</span>
-              </div>
-              <a href="#" class="text-lg">01234 56789</a>
-            </div>
-            <div>
-              <div class="flex items-center gap-2">
-                <svg class="w-6 h-6 fill-instincts-grey">
-                  <use xlink:href="/img/icons.svg#email"></use>
-                </svg>
-                <span class="text-2xl font-semibold">Email</span>
-              </div>
-              <a href="#" class="text-lg">enquiries@insinctstraining.com</a>
-            </div>
-          </div>
-          <ul class="flex gap-8 fill-instincts-grey">
-            <li>
-              <a href="#">
-                <svg class="w-6 h-6">
-                  <use xlink:href="/img/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="w-6 h-6">
-                  <use xlink:href="/img/icons.svg#messenger"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="w-6 h-6">
-                  <use xlink:href="/img/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="w-6 h-6">
-                  <use xlink:href="/img/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="w-6 h-6">
-                  <use xlink:href="/img/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <img class="col-span-6 object-cover" src="/img/course.jpg">
-      </div>
-    </section>
-  
-    <footer class="bg-stone-100 text-instincts-grey border-t border-stone-300">
-      <div class="max-w-screen-xl mx-auto grid gap-8 px-4 py-4 md:grid-cols-2 md:gap-2 md:py-8 md:px-8">
-        <ul class="flex flex-col gap-2 items-center text-lg md:flex-row md:gap-8">
-          <li>
-            <a href="/">Home</a>
-          </li>
+        <ul class="bg-stone-100 z-10 hidden peer-checked:flex flex-col gap-8 items-center text-lg absolute left-0 right-0 top-full pt-4 pb-8 md:flex md:relative md:flex-row md:p-0">
           <li>
             <a href="/about">About</a>
           </li>
@@ -140,48 +37,152 @@
             <a href="/contact">Contact</a>
           </li>
         </ul>
-        <ul class="flex justify-between w-full max-w-[248px] mx-auto fill-instincts-grey md:row-span-2 md:items-center md:mr-0">
-          <li>
-            <a href="#">
-              <svg class="w-6 h-6">
-                <use xlink:href="/img/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg class="w-6 h-6">
-                <use xlink:href="/img/icons.svg#messenger"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg class="w-6 h-6">
-                <use xlink:href="/img/icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg class="w-6 h-6">
-                <use xlink:href="/img/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg class="w-6 h-6">
-                <use xlink:href="/img/icons.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <span class="text-sm text-center md:text-left">
-          Copyright © 2022 <a href="https://www.r-bennett.com" class="hover:underline">Reece Bennett</a>. All rights
-          reserved.
-        </span>
       </div>
-    </footer>
+    </nav>
+  </header>
+  <div class="flex-auto">
+      <section class="bg-instincts-grey text-gray-50 relative">
+        <div class="max-w-screen-xl mx-auto md:flex">
+          <div class="space-y-8 px-4 md:px-8 py-8 md:py-16 lg:py-32 md:w-1/2">
+            <div class="space-y-6">
+              <h1 class="text-4xl lg:text-6xl font-semibold">
+                Contact us
+              </h1>
+              <div class="text-lg lg:text-2xl">
+                If you want more information, need something more bespoke, or are looking to chat then we can help you.
+              </div>
+            </div>
+            <img class="md:hidden" src="/img/IMG_0589.jpg">
+          </div>
+          <img class="hidden md:block md:w-1/2 md:object-cover xl:absolute xl:right-0 xl:h-full"
+            src="/img/IMG_0589.jpg">
+        </div>
+      </section>
+    
+      <section class="bg-stone-100 text-instincts-grey">
+        <div class="mx-auto px-4 md:px-8 py-8 md:py-16 lg:py-32 flex flex-col gap-8 md:flex-row items-center md:gap-16 md:justify-center">
+          <div class="flex flex-col items-center md:items-start gap-6">
+            <div class="flex flex-col items-center md:items-start">
+              <h2 class="flex items-center gap-2">
+                <svg class="w-6 h-6 fill-instincts-grey">
+                  <use xlink:href="/img/icons.svg#phone"></use>
+                </svg>
+                <span class="text-2xl font-semibold">Phone</span>
+              </h2>
+              <a href="tel: +4407598249857" class="text-lg">07598 249 857</a>
+            </div>
+            <div class="flex flex-col items-center md:items-start">
+              <h2 class="flex items-center gap-2">
+                <svg class="w-6 h-6 fill-instincts-grey">
+                  <use xlink:href="/img/icons.svg#email"></use>
+                </svg>
+                <span class="text-2xl font-semibold">Email</span>
+              </h2>
+              <a href="mailto: enquiries@insinctstraining.com" class="text-lg">enquiries@insinctstraining.com</a>
+            </div>
+            <ul class="flex gap-8 fill-instincts-grey">
+              <li>
+                <a href="#">
+                  <svg class="w-6 h-6">
+                    <use xlink:href="/img/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="w-6 h-6">
+                    <use xlink:href="/img/icons.svg#messenger"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="w-6 h-6">
+                    <use xlink:href="/img/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="w-6 h-6">
+                    <use xlink:href="/img/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="w-6 h-6">
+                    <use xlink:href="/img/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img class="object-cover max-h-96" src="/img/IMG_0616.jpg">
+          </div>
+        </div>
+      </section>
+  </div>
+  <footer class="bg-stone-100 text-instincts-grey border-t border-stone-300 shrink-0">
+    <div class="max-w-screen-xl mx-auto grid gap-8 px-4 py-4 md:grid-cols-2 md:gap-2 md:py-8 md:px-8">
+      <ul class="flex flex-col gap-2 items-center text-lg md:flex-row md:gap-8">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/courses">Courses</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+      <ul class="flex justify-between w-full max-w-[248px] mx-auto md:row-span-2 md:items-center md:mr-0">
+        <li>
+          <a href="#">
+            <svg class="w-6 h-6 fill-instincts-grey">
+              <use xlink:href="/img/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="w-6 h-6 fill-instincts-grey">
+              <use xlink:href="/img/icons.svg#messenger"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="w-6 h-6 fill-instincts-grey">
+              <use xlink:href="/img/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="w-6 h-6 fill-instincts-grey">
+              <use xlink:href="/img/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="w-6 h-6 fill-instincts-grey">
+              <use xlink:href="/img/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <span class="text-sm text-center md:text-left">
+        Copyright © 2022 <a href="https://www.r-bennett.com" class="hover:underline">Reece Bennett</a>. All rights
+        reserved.
+      </span>
+    </div>
+  </footer>
+  <script src="script.min.js"></script>
 </body>
 </html>
