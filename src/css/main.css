@@ -4,6 +4,6 @@
 
 @layer components {
   .text-shadow-bold {
-    text-shadow: 0 0 1px theme(colors.instincts-grey);
+    text-shadow: 0 0 1px theme(colors.neutral.600);
   }
 }
