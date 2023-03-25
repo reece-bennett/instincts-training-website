@@ -1,3 +1,3 @@
-<a href="{{href}}" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap {{#eq style "light"}}bg-gray-50 text-instincts-grey{{else eq style "dark"}}bg-instincts-grey text-gray-50{{else eq style "light-border"}}border border-gray-50 text-gray-50{{/eq}}">
+<a href="{{href}}" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap {{#eq style 'light'}}bg-gray-50 text-instincts-grey hover:bg-neutral-200{{else eq style 'dark'}}bg-instincts-grey text-gray-50 hover:bg-neutral-500{{else eq style 'light-border'}}border border-gray-50 text-gray-50 hover:bg-neutral-500{{/eq}}">
   {{> @partial-block}}
 </a>
