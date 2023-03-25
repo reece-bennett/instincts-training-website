@@ -8,7 +8,7 @@
   <link href="main.css" rel="stylesheet">
 </head>
 <body class="h-full flex flex-col bg-stone-100">
-  <header class="bg-stone-100 text-instincts-grey shrink-0">
+  <header class="bg-stone-100 text-neutral-600 shrink-0">
     <nav class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center relative md:px-8">
       <a href="/" class="flex gap-2 lg:gap-4">
         <img src="/img/instincts-logo.png" class="w-12 h-12 lg:w-16 lg:h-16">
@@ -21,27 +21,27 @@
       <div>
         <input type="checkbox" id="menu_toggle" class="peer hidden" autocomplete="off">
         <label for="menu_toggle" class="md:hidden">
-          <svg class="w-6 h-6 fill-instincts-grey">
+          <svg class="w-6 h-6 fill-neutral-600">
             <use xlink:href="/img/icons.svg#menu"></use>
           </svg>
         </label>
   
         <ul class="bg-stone-100 z-10 hidden peer-checked:flex flex-col gap-8 items-center text-lg absolute left-0 right-0 top-full pt-4 pb-8 md:flex md:relative md:flex-row md:p-0">
           <li>
-            <a href="/about">About</a>
+            <a href="/about" class="hover:text-shadow-bold">About</a>
           </li>
           <li>
-            <a href="/courses">Courses</a>
+            <a href="/courses" class="hover:text-shadow-bold">Courses</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/contact" class="hover:text-shadow-bold">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <div class="flex-auto">
-      <section class="bg-instincts-grey text-gray-50 relative">
+      <section class="bg-neutral-600 text-neutral-50 relative">
         <div class="max-w-screen-xl mx-auto md:flex">
           <div class="space-y-8 px-4 md:px-8 py-8 md:py-16 lg:py-32 md:w-1/2">
             <div class="space-y-6">
@@ -54,10 +54,10 @@
             </div>
             <img class="md:hidden" src="/img/IMG_0676.jpg">
             <div class="flex flex-col md:flex-row gap-4">
-              <a href="#courses" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap bg-gray-50 text-instincts-grey">
+              <a href="#courses" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap bg-neutral-50 text-neutral-600 hover:bg-neutral-200">
       Courses ↓</a>
     
-              <a href="/contact" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap border border-gray-50 text-gray-50">
+              <a href="/contact" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap border border-neutral-50 text-neutral-50 hover:bg-neutral-500">
       Contact</a>
     
             </div>
@@ -67,7 +67,7 @@
         </div>
       </section>
     
-      <section class="bg-stone-100 text-instincts-grey">
+      <section class="bg-stone-100 text-neutral-600">
         <div class="max-w-screen-md mx-auto px-4 md:px-8 py-8 md:py-16 lg:py-32 space-y-6 text-center">
           <h2 class="text-3xl lg:text-5xl font-semibold">Why Instincts?</h2>
           <p class="lg:text-lg text-left">
@@ -83,20 +83,20 @@
             restrictions and weapons. Course creation is our focus to enable our clients to achieve the maximum from the
             training.
           </p>
-          <a href="/about" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap bg-instincts-grey text-gray-50">
+          <a href="/about" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap bg-neutral-600 text-neutral-50 hover:bg-neutral-500">
       About</a>
     
         </div>
       </section>
     
-      <section class="bg-instincts-grey text-gray-50" id="courses">
+      <section class="bg-neutral-600 text-neutral-50" id="courses">
         <div class="max-w-screen-xl mx-auto px-4 md:px-8 py-8 md:py-16 lg:py-32 grid md:grid-cols-12 gap-8 items-center">
           <div class="md:col-span-5 space-y-6">
             <h2 class="text-3xl lg:text-5xl font-semibold text-center md:text-left">Our courses</h2>
             <p class="lg:text-lg">
               Our offer is unique and we will spend time to evaluate your needs and create a course to best suit your needs.
             </p>
-            <a href="/courses" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap bg-gray-50 text-instincts-grey">
+            <a href="/courses" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap bg-neutral-50 text-neutral-600 hover:bg-neutral-200">
       View courses</a>
     
           </div>
@@ -126,66 +126,66 @@
         </div>
       </section>
     
-      <section class="bg-stone-100 text-instincts-grey">
+      <section class="bg-stone-100 text-neutral-600">
         <div class="max-w-screen-md mx-auto px-4 md:px-8 py-8 md:py-16 lg:py-32 space-y-6 text-center">
           <h2 class="text-3xl lg:text-5xl font-semibold">Want to know more?</h2>
           <p class="lg:text-lg">
             If you want more information, need something more bespoke, or are looking to chat then we can help you.
           </p>
-          <a href="/contact" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap bg-instincts-grey text-gray-50">
+          <a href="/contact" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap bg-neutral-600 text-neutral-50 hover:bg-neutral-500">
       Contact</a>
     
         </div>
       </section>
   </div>
-  <footer class="bg-stone-100 text-instincts-grey border-t border-stone-300 shrink-0">
+  <footer class="bg-stone-100 text-neutral-600 border-t border-stone-300 shrink-0">
     <div class="max-w-screen-xl mx-auto grid gap-8 px-4 py-4 md:grid-cols-2 md:gap-2 md:py-8 md:px-8">
       <ul class="flex flex-col gap-2 items-center text-lg md:flex-row md:gap-8">
         <li>
-          <a href="/">Home</a>
+          <a href="/" class="hover:text-shadow-bold">Home</a>
         </li>
         <li>
-          <a href="/about">About</a>
+          <a href="/about" class="hover:text-shadow-bold">About</a>
         </li>
         <li>
-          <a href="/courses">Courses</a>
+          <a href="/courses" class="hover:text-shadow-bold">Courses</a>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <a href="/contact" class="hover:text-shadow-bold">Contact</a>
         </li>
       </ul>
       <ul class="flex justify-between w-full max-w-[248px] mx-auto md:row-span-2 md:items-center md:mr-0">
         <li>
-          <a href="#">
-            <svg class="w-6 h-6 fill-instincts-grey">
+          <a href="https://www.facebook.com/safetyandawareness">
+            <svg class="w-6 h-6 fill-neutral-600">
               <use xlink:href="/img/icons.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a href="#">
-            <svg class="w-6 h-6 fill-instincts-grey">
+          <a href="https://m.me/safetyandawareness">
+            <svg class="w-6 h-6 fill-neutral-600">
               <use xlink:href="/img/icons.svg#messenger"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a href="#">
-            <svg class="w-6 h-6 fill-instincts-grey">
+          <a href="https://www.instagram.com/instincts_training">
+            <svg class="w-6 h-6 fill-neutral-600">
               <use xlink:href="/img/icons.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a href="#">
-            <svg class="w-6 h-6 fill-instincts-grey">
+          <a href="https://twitter.com/InstinctsLtd">
+            <svg class="w-6 h-6 fill-neutral-600">
               <use xlink:href="/img/icons.svg#twitter"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a href="#">
-            <svg class="w-6 h-6 fill-instincts-grey">
+          <a href="https://www.linkedin.com/company/instincts-training-ltd">
+            <svg class="w-6 h-6 fill-neutral-600">
               <use xlink:href="/img/icons.svg#linkedin"></use>
             </svg>
           </a>

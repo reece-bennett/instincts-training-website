@@ -660,21 +660,21 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(163 163 163 / var(--tw-border-opacity));
 }
-.border-instincts-grey {
+.border-neutral-600 {
   --tw-border-opacity: 1;
-  border-color: rgb(84 84 84 / var(--tw-border-opacity));
+  border-color: rgb(82 82 82 / var(--tw-border-opacity));
 }
 .border-stone-300 {
   --tw-border-opacity: 1;
   border-color: rgb(214 211 209 / var(--tw-border-opacity));
 }
-.border-gray-50 {
+.border-neutral-50 {
   --tw-border-opacity: 1;
-  border-color: rgb(249 250 251 / var(--tw-border-opacity));
+  border-color: rgb(250 250 250 / var(--tw-border-opacity));
 }
-.bg-instincts-grey {
+.bg-neutral-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(84 84 84 / var(--tw-bg-opacity));
+  background-color: rgb(82 82 82 / var(--tw-bg-opacity));
 }
 .bg-stone-100 {
   --tw-bg-opacity: 1;
@@ -684,12 +684,12 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
-.bg-gray-50 {
+.bg-neutral-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
-.fill-instincts-grey {
-  fill: #545454;
+.fill-neutral-600 {
+  fill: #525252;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -753,18 +753,29 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
-.text-gray-50 {
+.text-neutral-50 {
   --tw-text-opacity: 1;
-  color: rgb(249 250 251 / var(--tw-text-opacity));
+  color: rgb(250 250 250 / var(--tw-text-opacity));
 }
-.text-instincts-grey {
+.text-neutral-600 {
   --tw-text-opacity: 1;
-  color: rgb(84 84 84 / var(--tw-text-opacity));
+  color: rgb(82 82 82 / var(--tw-text-opacity));
 }
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+.hover\:text-shadow-bold:hover {
+    text-shadow: 0 0 1px #525252;
+  }
+.hover\:bg-neutral-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+}
+.hover\:bg-neutral-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 115 115 / var(--tw-bg-opacity));
 }
 .hover\:underline:hover {
   text-decoration-line: underline;
