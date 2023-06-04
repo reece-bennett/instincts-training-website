@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational courses - Instincts Training</title>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body class="h-full flex flex-col bg-stone-100">
+  <header class="bg-stone-100 text-neutral-600 shrink-0">
+    <nav class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center relative md:px-8">
+      <a href="/" class="flex gap-2 lg:gap-4">
+        <img src="/img/instincts-logo.png" class="w-12 h-12 lg:w-16 lg:h-16">
+        <div class="flex flex-col items-center uppercase">
+          <span class="text-2xl lg:text-4xl">Instincts</span>
+          <span class="text-sm lg:text-base -mt-2 lg:-mt-1">Training LTD</span>
+        </div>
+      </a>
+  
+      <div>
+        <input type="checkbox" id="menu_toggle" class="peer hidden" autocomplete="off">
+        <label for="menu_toggle" class="md:hidden">
+          <svg class="w-6 h-6 fill-neutral-600">
+            <use xlink:href="/img/icons.svg#menu"></use>
+          </svg>
+        </label>
+  
+        <ul class="bg-stone-100 z-10 hidden peer-checked:flex flex-col gap-8 items-center text-lg absolute left-0 right-0 top-full pt-4 pb-8 md:flex md:relative md:flex-row md:p-0">
+          <li>
+            <a href="/about" class="hover:text-shadow-bold">About</a>
+          </li>
+          <li>
+            <a href="/educational-courses" class="hover:text-shadow-bold">Educational courses</a>
+          </li>
+          <li>
+            <a href="/practical-courses" class="hover:text-shadow-bold">Practical courses</a>
+          </li>
+          <li>
+            <a href="/contact" class="hover:text-shadow-bold">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="flex-auto">
+      <section class="bg-neutral-600 text-neutral-50 relative">
+        <div class="max-w-screen-xl mx-auto md:flex">
+          <div class="space-y-8 px-4 md:px-8 py-8 md:py-16 lg:py-32 md:w-1/2">
+            <div class="space-y-6">
+              <h1 class="text-4xl lg:text-6xl font-semibold">
+                Our educational courses
+              </h1>
+              <div class="text-lg lg:text-2xl">
+                We offer a range of educational courses covering a variety of topics, all of which can be tailored to better
+                suit your needs
+              </div>
+            </div>
+            <img class="md:hidden" src="/img/IMG_0605.jpg">
+          </div>
+          <img class="hidden md:block md:w-1/2 md:object-cover xl:absolute xl:right-0 xl:h-full" src="/img/IMG_0605.jpg">
+        </div>
+      </section>
+    
+      <section class="bg-stone-100 text-neutral-600">
+        <div class="max-w-screen-xl mx-auto px-4 md:px-8 py-8 md:py-16 lg:py-32 grid md:grid-cols-12 md:gap-x-8 gap-y-8
+                    items-center">
+          <div class="space-y-6 md:col-span-7 md:col-start-6">
+            <p class="lg:text-lg">
+              Our educational courses tackle the subject of anti-social behaviour, whether that be violence, harassment,
+              misogyny, or consent. Our courses are designed to address why we should not be heading down these paths to
+              criminality.
+            </p>
+            <p class="lg:text-lg">
+              We very often tell people what they should not be doing but fail to expand on the why. By describing
+              consequences, whether it be psychological or criminal we explore how the path to criminality never ends well
+              no matter what side or angle you look at it from.
+            </p>
+          </div>
+          <img class="object-cover max-h-60 sm:max-h-96 md:max-h-full w-full md:col-span-4 md:row-start-1"
+            src="/img/IMG_0657.jpg">
+          <p class="lg:text-lg md:col-span-7 md:col-start-1">
+            We use lived experience and true-life testimony to bring these messages home. Our Training Director has worked
+            in educational establishments up and down the UK including secondary schools, colleges, PRU’s \ Alternative
+            Provision Establishments and His Majesties Young Offenders Institutes (HMYOI) along with several Violence
+            Reduction Units and Police forces to gain first-hand experience in tackling the problems we face in society.
+          </p>
+          <img class="object-cover max-h-60 sm:max-h-96 md:max-h-full w-full md:col-span-4 md:col-start-9"
+            src="/img/IMG_0663.jpg">
+        </div>
+      </section>
+    
+      <section class="bg-neutral-200 text-neutral-600">
+        <div class="max-w-screen-lg mx-auto px-4 md:px-8 py-8 md:py-16 lg:py-32 space-y-8">
+          <div class="max-w-xl mx-auto space-y-6 text-center">
+            <h2 class="text-3xl lg:text-5xl font-semibold">
+              Courses
+            </h2>
+          </div>
+          <div class="border-t border-neutral-400">
+    <div class="space-y-6 border-b border-neutral-400 py-4 md:p-4 lg:p-8">
+      <h3>
+        <button class="w-full flex items-center justify-between gap-4 group" id="accordion-header-1"
+          aria-expanded="false" aria-controls="accordion-panel-1" data-module="accordion">
+          <span class="text-2xl font-semibold text-left">Instinctive first aid</span>
+          <span class="w-10 h-10 shrink-0 relative border border-neutral-600 rounded-full">
+            <span class="absolute bg-neutral-600 left-1/2 top-1/4 bottom-1/4 w-px -translate-x-1/2 transition-all
+                         group-aria-expanded:rotate-90"></span>
+            <span class="absolute bg-neutral-600 top-1/2 left-1/4 right-1/4 h-px -translate-y-1/2"></span>
+          </span>
+        </button>
+      </h3>
+      <div class="space-y-4" id="accordion-panel-1" aria-labelledby="accordion-header-1">
+                  <p class="lg:text-lg">
+                    What would you do if you came across an emergency while you were out and about. Do you know what to do? The
+                    aim of this course is to give knowledge of basic first and what to do in an emergency. It will cover the
+                    Danger Response Airway Breathing CPR (DR ABC), cuts and stab wounds, intoxication, CPR, recovery position
+                    and most importantly shouting or getting help from a medical professional.
+                  </p>
+      </div>
+    </div>
+    <div class="space-y-6 border-b border-neutral-400 py-4 md:p-4 lg:p-8">
+      <h3>
+        <button class="w-full flex items-center justify-between gap-4 group" id="accordion-header-2"
+          aria-expanded="false" aria-controls="accordion-panel-2" data-module="accordion">
+          <span class="text-2xl font-semibold text-left">Understanding violence</span>
+          <span class="w-10 h-10 shrink-0 relative border border-neutral-600 rounded-full">
+            <span class="absolute bg-neutral-600 left-1/2 top-1/4 bottom-1/4 w-px -translate-x-1/2 transition-all
+                         group-aria-expanded:rotate-90"></span>
+            <span class="absolute bg-neutral-600 top-1/2 left-1/4 right-1/4 h-px -translate-y-1/2"></span>
+          </span>
+        </button>
+      </h3>
+      <div class="space-y-4" id="accordion-panel-2" aria-labelledby="accordion-header-2">
+                  <p class="lg:text-lg">
+                    A workshop talking about the effects of violence, the causes to the body, stages of escalation, violence
+                    statistics in the UK, de-escalation, conflict resolution techniques, understanding our own part in a
+                    potentially violent situation and how to try and stay calm. Designed for all ages from school students to
+                    adult teachers and staff it gives an insight into what to expect and how to deal with anger and violent
+                    situations.
+                  </p>
+      </div>
+    </div>
+    <div class="space-y-6 border-b border-neutral-400 py-4 md:p-4 lg:p-8">
+      <h3>
+        <button class="w-full flex items-center justify-between gap-4 group" id="accordion-header-3"
+          aria-expanded="false" aria-controls="accordion-panel-3" data-module="accordion">
+          <span class="text-2xl font-semibold text-left">Sexual harrassment and consent</span>
+          <span class="w-10 h-10 shrink-0 relative border border-neutral-600 rounded-full">
+            <span class="absolute bg-neutral-600 left-1/2 top-1/4 bottom-1/4 w-px -translate-x-1/2 transition-all
+                         group-aria-expanded:rotate-90"></span>
+            <span class="absolute bg-neutral-600 top-1/2 left-1/4 right-1/4 h-px -translate-y-1/2"></span>
+          </span>
+        </button>
+      </h3>
+      <div class="space-y-4" id="accordion-panel-3" aria-labelledby="accordion-header-3">
+                  <p class="lg:text-lg">
+                    A workshop aimed at school age to university students explaining how to stay safe and legal around the
+                    Sexual Offences Act 2003. Describing what is meant by sexual harassment, its definitions and consequences.
+                    Describing what consent is and expelling any myths around both subjects. How we all need to sometimes look
+                    in the mirror and reflect if we are doing the right thing with or without meaning to cause offence.
+                  </p>
+      </div>
+    </div>
+    <div class="space-y-6 border-b border-neutral-400 py-4 md:p-4 lg:p-8">
+      <h3>
+        <button class="w-full flex items-center justify-between gap-4 group" id="accordion-header-4"
+          aria-expanded="false" aria-controls="accordion-panel-4" data-module="accordion">
+          <span class="text-2xl font-semibold text-left">Misogyny &amp; homophoia</span>
+          <span class="w-10 h-10 shrink-0 relative border border-neutral-600 rounded-full">
+            <span class="absolute bg-neutral-600 left-1/2 top-1/4 bottom-1/4 w-px -translate-x-1/2 transition-all
+                         group-aria-expanded:rotate-90"></span>
+            <span class="absolute bg-neutral-600 top-1/2 left-1/4 right-1/4 h-px -translate-y-1/2"></span>
+          </span>
+        </button>
+      </h3>
+      <div class="space-y-4" id="accordion-panel-4" aria-labelledby="accordion-header-4">
+                  <p class="lg:text-lg">
+                    With people on social media promoting unhealthy relationships, and hate crimes being focused on by
+                    authorities, this workshop looks to tackle mis-conceptions around equality, diversity and misogyny and
+                    homophobia including transphobia. Aimed at school age students through to university students it looks at
+                    tackling modern social misconceptions.
+                  </p>
+      </div>
+    </div>
+    <div class="space-y-6 border-b border-neutral-400 py-4 md:p-4 lg:p-8">
+      <h3>
+        <button class="w-full flex items-center justify-between gap-4 group" id="accordion-header-5"
+          aria-expanded="false" aria-controls="accordion-panel-5" data-module="accordion">
+          <span class="text-2xl font-semibold text-left">One punch kills</span>
+          <span class="w-10 h-10 shrink-0 relative border border-neutral-600 rounded-full">
+            <span class="absolute bg-neutral-600 left-1/2 top-1/4 bottom-1/4 w-px -translate-x-1/2 transition-all
+                         group-aria-expanded:rotate-90"></span>
+            <span class="absolute bg-neutral-600 top-1/2 left-1/4 right-1/4 h-px -translate-y-1/2"></span>
+          </span>
+        </button>
+      </h3>
+      <div class="space-y-4" id="accordion-panel-5" aria-labelledby="accordion-header-5">
+                  <p class="lg:text-lg">
+                    Aimed at school age to university students, it tackles the problem of violent conflict and its potentially
+                    devastating consequences. Talking through the consequences of violence and how it should be avoided by using
+                    a true story. How most violence is willingly entered into and all the warning signs have been ignored. How
+                    it is very easy to take a life, often by complete accident but still with devastating consequences for all
+                    parties concerned.
+                  </p>
+      </div>
+    </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="bg-stone-100 text-neutral-600">
+        <div class="max-w-screen-md mx-auto px-4 md:px-8 py-8 md:py-16 lg:py-32 space-y-6 text-center">
+          <h2 class="text-3xl lg:text-5xl font-semibold">Ready to learn?</h2>
+          <p class="lg:text-lg">
+            All the courses above can be tailored to a bespoke package to suit individual needs. We will sit down with you
+            if required to discuss in detail how we can help and make sure we tick all your boxes for your specific
+            requirements. We can assess risk assessments and make sure your policy is relevant and within the law for your
+            establishment in accordance with the Health and Safety at Work Act and Employment Law. Our mission is to keep
+            things relevant and real.
+          </p>
+          <a href="/contact" class="block md:inline-block px-6 py-3 md:px-8 md:py-4 md:text-lg font-semibold uppercase text-center whitespace-nowrap bg-neutral-600 text-neutral-50 hover:bg-neutral-500">
+      Contact</a>
+    
+        </div>
+      </section>
+  </div>
+  <footer class="bg-stone-100 text-neutral-600 border-t border-stone-300 shrink-0">
+    <div class="max-w-screen-xl mx-auto grid gap-8 px-4 py-4 md:grid-cols-[1fr_248px] md:gap-2 md:py-8 md:px-8">
+      <ul class="flex flex-wrap flex-col gap-2 items-center text-lg md:flex-row md:gap-x-8 md:gap-y-0">
+        <li>
+          <a href="/" class="hover:text-shadow-bold">Home</a>
+        </li>
+        <li>
+          <a href="/about" class="hover:text-shadow-bold">About</a>
+        </li>
+        <li>
+          <a href="/educational-courses" class="hover:text-shadow-bold whitespace-nowrap">Educational courses</a>
+        </li>
+        <li>
+          <a href="/practical-courses" class="hover:text-shadow-bold whitespace-nowrap">Practical courses</a>
+        </li>
+        <li>
+          <a href="/contact" class="hover:text-shadow-bold">Contact</a>
+        </li>
+      </ul>
+      <ul class="flex justify-between w-full max-w-[248px] mx-auto md:row-span-2 md:items-center md:mr-0">
+        <li>
+          <a href="https://www.facebook.com/safetyandawareness">
+            <svg class="w-6 h-6 fill-neutral-600">
+              <use xlink:href="/img/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://m.me/safetyandawareness">
+            <svg class="w-6 h-6 fill-neutral-600">
+              <use xlink:href="/img/icons.svg#messenger"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/instincts_training">
+            <svg class="w-6 h-6 fill-neutral-600">
+              <use xlink:href="/img/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/InstinctsLtd">
+            <svg class="w-6 h-6 fill-neutral-600">
+              <use xlink:href="/img/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/instincts-training-ltd">
+            <svg class="w-6 h-6 fill-neutral-600">
+              <use xlink:href="/img/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <span class="text-sm text-center md:text-left">
+        © 2023 Instincts Training Ltd. All rights reserved. Website by
+        <a href="https://www.r-bennett.com" class="hover:underline">Reece Bennett</a>.
+      </span>
+    </div>
+  </footer>
+  <script src="script.min.js"></script>
+</body>
+</html>
