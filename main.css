@@ -574,8 +574,8 @@ video {
 .max-w-screen-md {
   max-width: 768px;
 }
-.max-w-\[248px\] {
-  max-width: 248px;
+.max-w-\[200px\] {
+  max-width: 200px;
 }
 .flex-auto {
   flex: 1 1 auto;
