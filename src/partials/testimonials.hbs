@@ -1,0 +1,14 @@
+<div class="relative overflow-hidden transition-[height] duration-500" id="testimonials">
+  {{#each testimonials}}
+    <div class="absolute w-full transition-opacity duration-500 space-y-4 {{#if @first}}opacity-100{{else}}opacity-0 hidden{{/if}}">
+      <p class="lg:text-lg">
+        {{this}}
+      </p>
+    </div>
+  {{/each}}
+</div>
+<div id="testimonial-buttons">
+  {{#each testimonials}}
+    {{> testimonial-button active=@first }}
+  {{/each}}
+</div>

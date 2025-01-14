@@ -9,6 +9,9 @@ const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
+const data = require('gulp-data');
+const path = require('path');
+const fs = require('fs');
 
 /*
 * Build steps
@@ -19,6 +22,12 @@ function clean() {
 
 function html() {
   return src('src/pages/**/*.hbs')
+    .pipe(data((file) => {
+      const filename = `./src/data/${path.basename(file.path)}.json`;
+      if (fs.existsSync(filename)) {
+        return JSON.parse(fs.readFileSync(filename));
+      }
+    }))
     .pipe(hb()
       .partials('src/partials/**/*.hbs')
       .helpers('src/helpers/**/*.js'))
@@ -71,7 +80,7 @@ function bsReload(done) {
 
 function bsWatch() {
   watch('src/assets/**/*', series(assets, bsReload));
-  watch(['src/pages/**/*.hbs', 'src/partials/**/*.hbs', 'src/helpers/**/*.js'], series(html, css, bsReload));
+  watch(['src/pages/**/*.hbs', 'src/partials/**/*.hbs', 'src/helpers/**/*.js', 'src/data/*.json'], series(html, css, bsReload));
   watch('src/css/**/*.css', css);
   watch('src/js/**/*.js', series(js, bsReload));
 }
