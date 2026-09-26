@@ -47,24 +47,26 @@ function updateTestimonials() {
   updateContainerHeight()
 }
 
-window.addEventListener('resize', () => {
-  // Remove transition so change happens instantly, then re-add
-  container.classList.remove('height-transition');
-  updateContainerHeight();
-  container.classList.add('height-transition');
-});
-
-updateContainerHeight();
-
-setInterval(() => {
-  if (Date.now() - lastInteractionTime > INTERVAL) {
-    active = (active + 1) % buttons.length;
-    updateTestimonials();
-  }
-}, INTERVAL);
-
 function setActiveTestimonial(index) {
   active = index;
   updateTestimonials();
   lastInteractionTime = Date.now();
+}
+
+if (container) {
+  window.addEventListener('resize', () => {
+    // Remove transition so change happens instantly, then re-add
+    container.classList.remove('height-transition');
+    updateContainerHeight();
+    container.classList.add('height-transition');
+  });
+
+  updateContainerHeight();
+
+  setInterval(() => {
+    if (Date.now() - lastInteractionTime > INTERVAL) {
+      active = (active + 1) % buttons.length;
+      updateTestimonials();
+    }
+  }, INTERVAL);
 }
